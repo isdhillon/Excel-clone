@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet</title>
+    <!--Added Style Sheet-->
+    <link rel="stylesheet" href="style.css" class="cssSheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <!--menu container-->
+    <div class="menu-container">
+        <span class="material-icons-outlined material-icons file-name-menu">
+            insert_drive_file
+            <input type="text" class="file-name" value="Untitled Spreadsheet">
+            </span>
+        <!--Font Size-->
+        <span class="material-icons-outlined material-icons font-sizes">
+            format_size
+            
+            <select name="" id="" class="font-size" autofocus>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="32">32</option>
+            </select>
+        </span>
+        <!--Font-Family-->
+        <span class="material-icons-outlined material-icons fas">
+            font_download
+            
+        <select name="" id="" class="font-family" autofocus>
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="Georgia">Georgia</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+        </span>
+        <span class="material-icons-outlined material-icons border-menu">
+            border_style
+            <select name="" id="" class="border-style" autofocus>
+                <option value="none">None</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+                <option value="solid">Solid</option>
+            </select>
+        </span>
+        <!--Bold Italic Underline-->
+        <div class="bui-container">
+            <span class="material-icons-outlined material-icons bold">
+                format_bold
+            </span>
+            <span class="material-icons-outlined material-icons underline">
+                format_underlined
+            </span>
+            <span class="material-icons-outlined material-icons italic">
+                format_italic
+            </span>
+        </div>
+        <!--Alignment-->
+        <div class="align-container">
+            <span class="material-icons-outlined material-icons left">
+                format_align_left
+            </span>
+            <span class="material-icons-outlined material-icons center">
+                format_align_center
+            </span>
+            <span class="material-icons-outlined material-icons right">
+                format_align_right
+            </span>
+        </div>
+        <!--colors-->
+        <div class="color-container">
+            <!--text Color-->
+            <span class="material-icons-outlined material-icons">
+                border_color
+            <input type="color" class="color cont">
+            </span>
+            <span class="material-icons-outlined material-icons">
+                palette 
+                <!--background color-->
+            <input type="color" class="bg-color cont">
+            </span>
+        </div>
+            <span class="material-icons-outlined material-icons cross">
+                delete
+            </span>
+        <div class="nos-container">
+            <span class="material-icons-outlined material-icons new">
+                note_add
+            </span>
+            <span class="material-icons-outlined material-icons open">
+                file_upload
+            </span>
+            <span class="material-icons-outlined material-icons save">
+                file_download
+            </span>
+        </div>
+        <span class="material-icons-outlined material-icons toggle">
+            toggle_on
+        </span>
+        
+    </div>
+    <!-- formula menu-->
+    <div class="formula-container">
+        <!--address field-->
+        <input type="text" class="address-input" readonly>
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/formula-fx.png"/>
+        <!-- forumla input-->
+        <input type="text" class="formula-input">
+    </div>
+    <!--grid-->
+    <div class="grid-container">
+        <!--top corner box-->
+        <div class="left_box box" > </div>
+        <!--Labled row-->
+        <div class="top_row"></div>
+        <!--labeled column-->
+        <div class="left_col"></div>
+        <!-- The 2D matrix-->
+        <div class="grid"></div>
+    </div>
+    <!--Sheet Container-->
+    <div class="sheets-container">
+        <!--Add button-->
+        <div class="add-sheet_btn-container">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+        <!--SHeet list-->
+        <div class="sheet-list">
+            <div class="sheet active" idx="0">Sheet 1</div>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="innerform">
+            <label for="myfile">Select a file:</label>
+            <input type="file" name="" class="open-file">
+        </div>
+    </div>
+    <!--Added Scripts Files-->
+    <script src="grid.js"></script>
+    <script src="formula.js"></script>
+    <script src="saveOpen.js"></script>
+</body>
+</html>

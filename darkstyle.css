@@ -1,0 +1,260 @@
+/* Html elements*/
+
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+
+}
+/*menu container*/
+
+.menu-container {
+    height: 3rem;
+    display: flex;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    align-items: center;
+}
+.menu-container>* {
+    height: 60%;
+    color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.font-sizes{
+    min-width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.font-size{
+    width: 55%;
+}
+.font-family{
+    width: 85%;
+}
+.fas{
+    min-width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.border-menu{
+    min-width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bui-container {
+    min-width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bui-container>* {
+    width: 30%;
+    height: 80%;
+    text-align: center;
+}
+.align-container {
+    min-width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.align-container>* {
+    width: 45%;
+    height: 80%;
+    text-align: center;
+}
+.color-container {
+    min-width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.color-container>* {
+    width: 30%;
+    height: 80%;
+    text-align: center;
+}
+.cont{
+    width: 50%;
+}
+.nos-container{
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nos-container>*{
+    width: 15%;
+    height: 80%;
+    text-align: center;
+    
+}
+.open{
+    width: 35%;
+}
+/*Formula container*/
+
+.formula-container{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+.formula-container>* {
+    height: 70%;
+}
+.address-input{
+    width: 4rem;
+}
+.formula-input{
+    width:calc(100vw - 8rem);
+}
+
+/*Grid container*/
+
+.grid-container {
+    border: 1px solid black;
+    background-color: #636e72;
+    height: calc(100vh - (4rem + 2rem + 2rem));
+    overflow: auto;
+    position: relative;
+}
+.left_box {
+    background-color: #1e272e;
+}
+.box {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid;
+    text-align: center;
+}
+.top_row {
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    left: 2rem;
+    top: 0rem;
+
+}
+.cell {
+    min-height: 2rem;
+    max-height: 2rem;
+    min-width: 6rem;
+    max-width: 6rem;
+    line-height: 2rem;
+    overflow: hidden;
+    border: 1px solid;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+.grid {
+
+    background-color: white;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    /* display: flex; */
+}
+
+/*Sheet Container*/
+
+.sheets-container {
+    height: 2rem;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+    display: flex;
+    
+}
+.add-sheet_btn-container{
+    width: 3rem;
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.sheet-list{
+    width: calc(100vh -3rem);
+    border: 1px solid;
+    display: flex;
+    height: 100%;
+    overflow: auto;
+
+}
+.sheet{
+    min-width: 5rem;
+    border: 1px solid black;
+    height: 100%;
+    background-color: #f1f2f6;
+}
+.active{
+    background-color: #ecf0f1;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sheet-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sheet-list {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+.active-class{
+    background-color: grey;
+}
+/* new open save */
+.nos-container>*{
+    border:none;
+}
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 20rem; /* Full width (cover the whole page) */
+    height: 20rem; /* Full height (cover the whole page) */
+    top: calc((100vh - 200px)/2);
+    left: calc((100vw - 200px)/2);
+    background-color: black; 
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 8px 10px #888888;
+    z-index: 100; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.innerform{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.file-name-menu{
+    min-width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.file-name{
+    width: 80%;
+}
