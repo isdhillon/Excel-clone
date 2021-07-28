@@ -39,6 +39,8 @@ openFile.addEventListener("change", function () {
     let fr = new FileReader();
     // reading the file as text 
     fr.readAsText(fileObj);
+    //assigning the file name to the menu
+    fileName.value=fileObj.name.split(".")[0]
     //when the file is loaded
     fr.addEventListener("load", function () {
         //json file is converted back to sheet array
